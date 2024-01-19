@@ -1,5 +1,5 @@
 import numpy as np
-def smooth(x, y, order : int = 44, ncf : int = 100, offset : int = 2) -> np.ndarray:
+def smooth(x, y, order : int = 22, ncf : int = 10, offset : int = 2) -> np.ndarray:
   """Main function run
   
   Parameters
