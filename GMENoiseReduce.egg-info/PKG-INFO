@@ -8,13 +8,8 @@ Author: Eric Homan
 Author-email: ejhoman92@gmail.com
 License: MIT
 Keywords: Noise,Noise-reduction,Noise removal
-Classifier: Development Status :: 4 - Beta
-Classifier: Intended Audience :: Developers, Scientists
-Classifier: Topic :: Noise Reduction
-Classifier: License :: OSI Approved :: MIT License
 Classifier: Programming Language :: Python :: 3
-Classifier: Programming Language :: Python :: 3.4
-Classifier: Programming Language :: Python :: 3.5
-Classifier: Programming Language :: Python :: 3.6
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
 License-File: LICENSE
 Requires-Dist: numpy
