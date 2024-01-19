@@ -1,5 +1,23 @@
 import numpy as np
-def smooth(x,y, res = 44, ncf = 100):
+def smooth(x, y, res : int = 44, ncf : int = 100) -> np.ndarray:
+  """Main function run
+  
+  Parameters
+  ----------
+  x : list-like 
+    List of x values
+  y : list-like
+    List of y values
+  res : int, optional
+    Order of CME calculations
+  ncf : int, optional
+    ncf descriptor
+
+  Returns
+  -------
+  numpy.ndarray
+    List of processed y values
+  """
   engy = x
   eps1 = y
   eps2 = y
