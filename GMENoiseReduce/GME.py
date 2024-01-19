@@ -1,5 +1,5 @@
 import numpy as np
-def smooth(x, y, res : int = 44, ncf : int = 100) -> np.ndarray:
+def smooth(x, y, order : int = 44, ncf : int = 100, offset : int = 2) -> np.ndarray:
   """Main function run
   
   Parameters
@@ -11,8 +11,9 @@ def smooth(x, y, res : int = 44, ncf : int = 100) -> np.ndarray:
   res : int, optional
     Order of CME calculations
   ncf : int, optional
-    ncf descriptor
-
+    noise cut off coefficient
+  offset : int, optional
+    offset added to R-matrix zero coefficient
   Returns
   -------
   numpy.ndarray
@@ -24,10 +25,10 @@ def smooth(x, y, res : int = 44, ncf : int = 100) -> np.ndarray:
   # Set parameters
   ki = 0
   kf = len(y-1)
-  nc = ncf
-  M = res
-  THH = np.pi/2
-  OFF = 2.0
+  nc = ncf #noise cut off coefficient
+  M = order #CNE order
+  THH = np.pi/2 
+  OFF = offset #empirical offset added to R-matrix zero coefficient (setting to zero returns unstable results)
 
   # Derived universal parameters
   NPTS = kf - ki 
