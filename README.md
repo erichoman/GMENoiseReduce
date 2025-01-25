@@ -14,7 +14,8 @@ Python implementation of the Generalized Maximum Entropy white noise elimination
     from GMENoiseReduce import GME
     x,y = data
     smoothed-yvals = GME.smooth(x,y)
-  ![Test results on artificial data](https://cdn.discordapp.com/attachments/282563337437315082/1198035188572246158/pt7tA2Qe8HMAAAAASUVORK5CYII.png?ex=65bd7037&is=65aafb37&hm=fd0e9721af7a745127092b4c42866aab76d704c6f480dc38a2ec2dfa7c26f4f9&)
+  ![Test results on artificial data](![image](https://github.com/user-attachments/assets/eade4a72-af9a-4617-b920-1b91f15a5e45)
+)
 ## Advanced Usage
 The full function takes in additional arguments if the curve is not ideal 
 
